@@ -1,0 +1,5 @@
+I WILL USE THIS PROJECT TO UNDERSTAND GIT AND GITHUB
+
+Need to make it persist on refresh
+Make it work to my favour by customizing it as for my preferences
+implement filter functionality using switch statement

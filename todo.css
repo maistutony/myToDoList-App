@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+}
+h1{
+    align-items: center;
+    background-color:#284b72;
+    color: white;
+}
+.todo-container{
+    align-items: center;
+    min-height:100vh;
+    margin-top:0px;
+    background-color: #C1BFC6;
+}
+.todo-Dcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-todo{
+    height: 32px;
+    width: 300px;
+    border-radius: 32px;
+    padding: 8px 16px;
+    margin-right: 16px;
+   
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+#add-todo{
+    font-size: 24px;
+    color: green;
+    cursor: pointer;
+    pointer-events: none;
+}
+.validate{
+    background-color: red;
+    text-align: center;
+    display: block;
+    width: 300px;
+    margin: 4px auto;
+}
+.error{
+color: rgb(255, 255, 255);
+font-size: 18px;
+}
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todo-div{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 16px;
+   justify-content: center;
+   height: 120px;
+   background-color:#6c87a5;
+   border-radius: 32px;
+}
+.timeClass{
+    width: 320px;
+    list-style-type: none;
+    text-align: center;
+     color: rgb(226, 232, 237);
+}
+.emptyTasks{
+    background-color:#6c87a5;
+    height: 120px;
+    border-radius: 32px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+#completed-icon{
+    color: rgb(0, 128, 0);
+    font-size: 25px;
+    cursor: pointer;
+    pointer-events: none;
+}
+#delete-icon{
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+    pointer-events: none;
+}
+.completed{
+    margin: auto 10px;
+
+}
+.line-through{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.todo-item{
+    margin-left: 8px;
+    list-style-type: none;
+    font-size: 20px;
+    width: 480px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .input-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .error{
+        width: 150px;
+        font-size: 14px;
+    }
+    h1{
+     font-size: 24px;
+    }
+    .input-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+    .input-todo{
+        height: 32px;
+        width: 150px;
+        border-radius: 32px;
+        padding-left:16px;
+        margin-right: 8px;
+       
+    }
+    #add-todo{
+        font-size: 24px;
+    }
+    .todo-div{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin: 8px;
+       justify-content: center;
+       height: 80px;
+       background-color:#6c87a5;
+       border-radius: 32px;
+    }
+    .todo-item{
+        margin-left: 8px 8px;
+        list-style-type: none;
+        font-size: 16px;
+        width: 120px;
+    }
+    .timeClass{
+        width: 88px;
+        font-size: 16px;
+    }
+    #completed-icon{
+        font-size: 20px;
+    }
+    #delete-icon{
+        font-size: 20px;
+    }
+    .emptyTasks{
+        background-color:#6c87a5;
+        height: 120px;
+        border-radius: 32px;
+        width: 310px;
+    }
+}
+@media (min-width: 768px) and (max-width: 920px){
+    .error{
+        width: 180px;
+        font-size: 16px;
+    }
+    h1{
+        font-size: 32px;
+       }
+    .input-todo{
+        height: 32px;
+        width: 200px;
+        border-radius: 32px;
+        padding-left: 16px;
+        margin-right: 8px;
+       
+    }
+    #add-todo{
+        font-size: 24px;
+    }
+    .todo-div{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin: 16px;
+       justify-content: center;
+       height: 150px;
+       background-color:#6c87a5;
+       border-radius: 32px;
+    }
+    .todo-item{
+        font-size: 20px;
+        width: 300px;
+    }
+    .timeClass{
+        width: 96px;
+    }
+    #completed-icon{
+        font-size: 25px;
+    }
+    #delete-icon{
+        font-size: 25px;
+    }
+    .emptyTasks{
+        background-color:#6c87a5;
+        height: 120px;
+        border-radius: 32px;
+        width: 480px;
+    }
+}
